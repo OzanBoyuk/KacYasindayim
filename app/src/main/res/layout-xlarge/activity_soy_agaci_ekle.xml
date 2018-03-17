@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="oyun.ozan.kacyasindayim.SoyAgaciEkle">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSoyAgaciEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buton_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/linearLayout"
+            android:weightSum="1"
+            >
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buton_height"
+                android:prompt="@string/spinnerElemanlar"
+                android:id="@+id/spinner"
+                android:layout_weight="0.5"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etGirilen"
+                android:textSize="@dimen/text_size"
+                android:inputType="textPersonName"
+                android:layout_weight="0.5"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/isimGirHintTexti" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:text="@string/soyAgaciDogumGunuButonu"
+            android:id="@+id/btnDogumTarihi"
+            android:textColor="#ffffbb6d"
+            android:textSize="@dimen/text_size"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:text=""
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/text_size"
+            android:id="@+id/tvDogumTarihi"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_gravity="center"
+            android:text="@string/ekleButonuTexti"
+            android:id="@+id/btnEkle"
+            android:layout_below="@+id/tvDogumTarihi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ffffbb6d"
+            android:textSize="@dimen/text_size"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5"  />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

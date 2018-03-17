@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="oyun.ozan.kacyasindayim.Giris">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true">
+
+
+        <Button
+            android:id="@+id/btnYasHesapla"
+            android:text="@string/girisYasHesaplaButonuTexti"
+            android:textColor="#ffcaff37"
+            android:textSize="@dimen/text_size"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="@string/girisSoyAgaciButonuTexti"
+            android:id="@+id/btnSoyAgaci"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffbb6d"
+            android:textSize="@dimen/text_size"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            />
+
+        <Button
+            android:text="@string/girisDigerButonuTexti"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnDiger"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffafdbff"
+            android:textSize="@dimen/text_size"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="@string/girisNeKadarBuyugumButonuTexti"
+            android:id="@+id/btnNeKadarBuyuk"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffff5d58"
+            android:textSize="@dimen/text_size"
+            android:layout_width="@dimen/hesapla_buton_width"
+            android:layout_height="@dimen/buton_height"
+            android:background="@drawable/butonshape"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buton_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

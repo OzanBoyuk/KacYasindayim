@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">35dp</dimen>
+    <dimen name="activity_vertical_margin">35dp</dimen>
+    <dimen name="buton_height">100dp</dimen>
+    <dimen name="margin_top">40dp</dimen>
+    <dimen name="text_size">40sp</dimen>
+    <dimen name="hesapla_buton_width">500dp</dimen>
+    <dimen name="cizgi_textview">20px</dimen>
+    <dimen name="padding_bottom">20dp</dimen>
+    <dimen name="image_buton_width">100px</dimen>
+    <dimen name="image_buton_height">100px</dimen>
+</resources>
